@@ -8,24 +8,71 @@
       href="assets/images/icon.png"
       type="image/x-icon"
     />
+    <link rel="stylesheet" href="src/css/root.css" />
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" />
     <link rel="stylesheet" href="src/css/styles.css" />
     <title>Mário Bros</title>
   </head>
   <body>
-    <img src="assets/images/logo.png" alt="Logo Super Mário" />
-    <p>
-      Encanadores Mário & Luigi - Resolvendo Seus Problemas Hidráulicos Com
-      Estilo!
-    </p>
-    <p>
-      Você já se encontrou em uma situação de emergência com encanamento?
-      Vazamentos inesperados, canos entupidos ou torneiras que não param de
-      pingar? Não se preocupe, porque estamos aqui para salvar o dia!
-      Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos -
-      Mário e Luigi!
-    </p>
+    <header class="header">
+      <img src="assets/images/logo-header.png" alt="logo face mario" />
+      <a href="#">Home</a>
+      <a href="#">Nossos Serviços</a>
+      <a href="#">Fale Conosco</a>
+    </header>
 
-    <button>Entre em contato</button>
+    <main class="container">
+      <div class="info">
+        <img
+          class="logo-mario"
+          src="assets/images/logo.png"
+          alt="Logo Super Mário"
+        />
+        <h2 class="title">
+          Encanadores Mário & Luigi - Resolvendo Seus Problemas Hidráulicos Com
+          Estilo!
+        </h2>
+        <p class="paragraf">
+          Você já se encontrou em uma situação de emergência com encanamento?
+          Vazamentos inesperados, canos entupidos ou torneiras que não param de
+          pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+          Apresentamos a vocês os encanadores mais famosos do Reino dos
+          Cogumelos - Mário e Luigi!
+        </p>
+        <button>Entre em contato</button>
+      </div>
+      <div>
+        <img
+          class="imagem-mario-luigi"
+          src="assets/images/mario.png"
+          alt="Mario e Luigi"
+        />
+      </div>
+    </main>
+
+    <section>
+      <div class="video">
+        <video src="assets/videos/video.mp4" autoplay muted loop></video>
+      </div>
+      <div class="mascara"></div>
+    </section>
+
+    <a
+      class="link-whatsapp"
+      href="https://api.whatsapp.com/send?phone=5541991229884&text=Ol%C3%A1,%20quero%20a%20ajuda%20dos%20irm%C3%A3os%20Mario!"
+      target="_blank"
+    >
+      <img src="assets/images/whatsapp.png" alt="logo whatsapp" />
+    </a>
+
+    <div class="mascara-form"></div>
+
+    <form class="formulario-fale-conosco">
+      <input placeholder="Seu nome" />
+      <input placeholder="Telefone" />
+      <textarea placeholder="Digite seu problema aqui..."></textarea>
+      <button>Pedir Orçamento</button>
+    </form>
   </body>
   <script src="src/js/script.js"></script>
 </html>
