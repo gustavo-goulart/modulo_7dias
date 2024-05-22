@@ -118,12 +118,10 @@ video {
   position: fixed;
   top: 30%;
   left: -295px;
-  /* top: 30%;
-  left: 50%;
-  transform: translateX(-50%); */
   padding: 16px;
   border-radius: 5px;
   gap: 16px;
+  transition: left 0.4s ease-in-out;
 }
 
 input {
@@ -144,6 +142,7 @@ textarea {
 }
 
 .mascara-form {
+  visibility: hidden;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -154,4 +153,13 @@ textarea {
     rgba(10, 12, 16, 0.7) 50%,
     rgba(10, 12, 16, 0.99) 85%
   );
+  transition: visibility 0.4s ease-in-out;
+}
+
+.mascara-form i {
+  position: absolute;
+  top: 150px;
+  right: 450px;
+  cursor: pointer;
+  transition: visibility 0.1s ease-in-out;
 }

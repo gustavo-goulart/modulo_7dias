@@ -39,7 +39,7 @@
           Apresentamos a vocês os encanadores mais famosos do Reino dos
           Cogumelos - Mário e Luigi!
         </p>
-        <button>Entre em contato</button>
+        <button onclick="mostrarForm()">Entre em contato</button>
       </div>
       <div>
         <img
@@ -65,13 +65,27 @@
       <img src="assets/images/whatsapp.png" alt="logo whatsapp" />
     </a>
 
-    <div class="mascara-form"></div>
+    <div class="mascara-form" onclick="fecharForm()">
+      <i
+        class="em em-heavy_multiplication_x"
+        aria-role="presentation"
+        aria-label="HEAVY MULTIPLICATION X"
+      ></i>
+    </div>
 
-    <form class="formulario-fale-conosco">
-      <input placeholder="Seu nome" />
-      <input placeholder="Telefone" />
-      <textarea placeholder="Digite seu problema aqui..."></textarea>
-      <button>Pedir Orçamento</button>
+    <form
+      class="formulario-fale-conosco"
+      action="https://formcarry.com/s/lS5ekm69pOz"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      <input placeholder="Seu nome" type="text" name="nome" />
+      <input placeholder="Telefone" type="tel" name="telefone" />
+      <textarea
+        placeholder="Digite seu problema aqui..."
+        name="duvida"
+      ></textarea>
+      <button type="submit">Pedir Orçamento</button>
     </form>
   </body>
   <script src="src/js/script.js"></script>
