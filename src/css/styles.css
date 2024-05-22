@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
 .header {
   display: flex;
   align-items: center;
@@ -41,7 +43,6 @@
 .title {
   color: #fff;
   font-size: 2rem;
-  text-align: center;
 }
 
 .paragraf {
@@ -49,7 +50,6 @@
   font-size: 1.25rem;
   line-height: 1.2;
   margin: 16px 0;
-  text-align: justify;
 }
 
 button {
@@ -162,4 +162,43 @@ textarea {
   right: 450px;
   cursor: pointer;
   transition: visibility 0.1s ease-in-out;
+}
+
+/* Media Query */
+@media (max-width: 1100px) {
+  .header {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header img {
+    display: none;
+  }
+
+  .header a {
+    font-size: 1.2rem;
+  }
+
+  .title,
+  .paragraf {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .info {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .imagem-mario-luigi {
+    width: 80vw;
+    height: auto;
+  }
 }
